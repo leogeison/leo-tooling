@@ -1,0 +1,11 @@
+{
+  "name": "leo-tooling",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A collection of development tooling maintained by Léo Geison.",
+  "author": "Léo Geison",
+  "license": "MIT",
+  "type": "module",
+  "packageManager": "pnpm@10.18.2",
+  "scripts": {}
+}
