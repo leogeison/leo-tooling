@@ -1,5 +1,5 @@
 {
-  "name": "@leoGeison/eslint-config",
+  "name": "@leogeison/eslint-config",
   "version": "0.1.0",
   "description": "Shared ESLint configs for Node.js and React projects.",
   "author": "Léo Geison",
@@ -22,5 +22,13 @@
   "peerDependencies": {
     "eslint": ">=9"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^26.1.0",
+    "eslint": "^10.6.0",
+    "eslint-config-prettier": "^10.1.8",
+    "tsup": "^8.5.1",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.62.1"
+  }
 }

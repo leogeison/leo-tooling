@@ -1,0 +1,14 @@
+node_modules
+dist
+build
+coverage
+*.log
+pnpm-debug.log*
+*.tsbuildinfo
+.env
+.env.*
+.vscode
+.idea
+.DS_Store
+Thumbs.db
+.turbo
