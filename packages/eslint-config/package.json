@@ -1,0 +1,26 @@
+{
+  "name": "@leoGeison/eslint-config",
+  "version": "0.1.0",
+  "description": "Shared ESLint configs for Node.js and React projects.",
+  "author": "Léo Geison",
+  "license": "MIT",
+  "type": "module",
+  "private": false,
+  "exports": {
+    ".": "./dist/base.js",
+    "./base": "./dist/base.js",
+    "./node": "./dist/node.js",
+    "./react": "./dist/react.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/base.ts src/node.ts src/react.ts --format esm --dts",
+    "dev": "tsup src/base.ts src/node.ts src/react.ts --format esm --dts --watch"
+  },
+  "peerDependencies": {
+    "eslint": ">=9"
+  },
+  "devDependencies": {}
+}
