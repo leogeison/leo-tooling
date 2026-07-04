@@ -1,19 +1,19 @@
+import globals from 'globals'
+
 import base from './base.js'
 
-export default [
+const nodeConfig = [
   ...base,
   {
     languageOptions: {
       globals: {
-        process: 'readonly',
-        console: 'readonly',
-        Buffer: 'readonly',
-        __dirname: 'readonly',
-        __filename: 'readonly'
-      }
+        ...globals.node,
+      },
     },
     rules: {
-      'no-console': 'off'
-    }
-  }
-]
+      'no-console': 'off',
+    },
+  },
+] as unknown as typeof base
+
+export default nodeConfig

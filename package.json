@@ -7,5 +7,7 @@
   "license": "MIT",
   "type": "module",
   "packageManager": "pnpm@10.18.2",
-  "scripts": {}
+  "scripts": {
+     "build": "pnpm --filter @leogeison/eslint-config build"
+  }
 }
