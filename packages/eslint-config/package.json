@@ -7,10 +7,22 @@
   "type": "module",
   "private": false,
   "exports": {
-    ".": "./dist/base.js",
-    "./base": "./dist/base.js",
-    "./node": "./dist/node.js",
-    "./react": "./dist/react.js"
+    ".": {
+      "types": "./dist/base.d.ts",
+      "default": "./dist/base.js"
+    },
+    "./base": {
+      "types": "./dist/base.d.ts",
+      "default": "./dist/base.js"
+    },
+    "./node": {
+      "types": "./dist/node.d.ts",
+      "default": "./dist/node.js"
+    },
+    "./react": {
+      "types": "./dist/react.d.ts",
+      "default": "./dist/react.js"
+    }
   },
   "files": [
     "dist"
@@ -30,8 +42,31 @@
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.3",
+    "globals": "^17.7.0",
     "tsup": "^8.5.1",
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.62.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leogeison/leo-tooling.git"
+  },
+  "homepage": "https://github.com/leogeison/leo-tooling",
+  "bugs": {
+    "url": "https://github.com/leogeison/leo-tooling/issues"
+  },
+  "keywords": [
+    "eslint",
+    "typescript",
+    "react",
+    "node",
+    "config",
+    "flat-config"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
