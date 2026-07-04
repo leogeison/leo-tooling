@@ -16,8 +16,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup src/base.ts src/node.ts src/react.ts --format esm --dts",
-    "dev": "tsup src/base.ts src/node.ts src/react.ts --format esm --dts --watch"
+    "build": "tsup",
+    "dev": "tsup --watch"
   },
   "peerDependencies": {
     "eslint": ">=9"
